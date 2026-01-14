@@ -97,14 +97,42 @@
       background-color: #0056b3;
     }
     footer {
-      background-color: #2604e8;
+      background-color: #060606;
       color: #fff;
       text-align: center;
       padding: 25px 10px;
       font-size: 0.9em;
     }
+
+    .wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wa-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
   </style>
 </head>
+<a href="https://wa.me/6285882573640?text=Halo%20Anatop%20Tour,%20saya%20ingin%20melakukan%20reservasi%20paket%20wisata."
+   class="wa-float"
+   target="_blank"
+   aria-label="Booking WhatsApp">
+  💬 Booking via WhatsApp
+</a>
+
 <body>
 
 <header>
@@ -144,39 +172,57 @@
     <div class="feature">
       <h3>Korea</h3>
       <p>Rp 10.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
     </div>
     <div class="feature">
       <h3>Jepang</h3>
       <p>Rp 20.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
     </div>
     <div class="feature">
-      <h3>Turkiye</h3>
+      <h3>Trukiye</h3>
       <p>Rp 16.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
     </div>
+     <div class="feature">
+      <h3>Malaysia - Singapore</h3>
+      <p>Rp 5.399.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
+    </div>
+     <div class="feature">
+      <h3>Malaysia - Singapore - Thailand</h3>
+      <p>Rp 5.699.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
+    </div>
+     <div class="feature">
+      <h3>Bangkok Pattaya</h3>
+      <p>Rp 1.950.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      
+    </div>
+    
   </div>
 </section>
 <section id="booking">
   <h2>Reservasi Sekarang!</h2>
-  <p>Isi data kamu dan tim kami akan segera menghubungi via WhatsApp.</p>
-  <form id="waForm">
-    <input type="text" id="nama" placeholder="Nama Lengkap" required><br> 
-    <input type="text" id="alamat" placeholder="Alamat" required><br>
-    <select id="paket" required>
-    <option value="">Pilih Destinasi Wisata</option>
-      <option>Malaysia</option>
-      <option>Singapore</option>
-      <option>Thailand</option>
-      <option>Vietnam</option>
-      <option>Korea</option>
-      <option>China</option>
-      <option>Japan</option>
-      <option>Australia</option>
-      <option>Turkiye</option>
-      <option>Lainnya</option>
-    </select><br>
-    <button type="submit">Kirim & Hubungi via WhatsApp</button>
-  </form>
+  <p>Klik tombol di bawah ini dan langsung chat kami via WhatsApp.</p>
+
+  <a href="https://wa.me/6285882573640?text=Halo%20Anatop%20Tour,%20saya%20ingin%20melakukan%20reservasi%20paket%20wisata."
+     target="_blank"
+     style="
+       background:#25D366;
+       color:#fff;
+       padding:15px 30px;
+       border-radius:30px;
+       text-decoration:none;
+       font-size:1.1em;
+       font-weight:bold;
+       display:inline-block;
+       margin-top:15px;">
+    💬 Booking via WhatsApp
+  </a>
 </section>
+
+
 
 <footer>
   ©️ 2026 <b>Anatop Tour</b> | 
@@ -184,33 +230,6 @@
     Instagram: @anatop.tour
   </a>
 </footer>
-
-<script>
-  document.getElementById("waForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const nama = document.getElementById("nama").value.trim();
-    const alamat = document.getElementById("alamat").value.trim();
-    const paket = document.getElementById("paket").value;
-
-    if(!nama || !alamat || !paket){
-      alert("Harap isi semua data terlebih dahulu!");
-      return;
-    }
-
-    const nomorTujuan = "6285353177008"; // ganti 0 dengan 62
-    const pesan = `Halo Anatop Tour,%0A
-Saya ingin melakukan reservasi:%0A%0A
-*Nama:* ${nama}%0A
-*Alamat:* ${alamat}%0A
-*Destinasi:* ${paket}%0A%0A
-Mohon info lebih lanjut ya!`;
-    const url = `https://wa.me/${nomorTujuan}?text=${pesan}`;
-
-    window.open(url, "_blank");
-    document.getElementById("waForm").reset();
-  });
-</script>
 
 </body>
 </html>
