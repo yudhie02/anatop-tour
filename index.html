@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anatop Tour | Paket Liburan Murah 2026 | Explore Dunia Bersama Kami!</title>
+  <title>Anatop Tour | Paket Liburan Murah 2026</title>
+
   <style>
     body {
       font-family: "Poppins", Arial, sans-serif;
@@ -11,24 +12,18 @@
       background-color: #f4f7fb;
       color: #333;
     }
+
     header {
       background: linear-gradient(135deg, #0000ff, #606262);
       color: white;
       text-align: center;
       padding: 70px 20px;
     }
-    header h1 {
-      font-size: 2.4em;
-      margin: 0;
-    }
-    header h2 {
-      font-size: 1.5em;
-      margin: 0;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1em;
-    }
+
+    header h1 { font-size: 2.4em; margin: 0; }
+    header h2 { font-size: 1.5em; margin: 0; }
+    header p { margin-top: 10px; font-size: 1.1em; }
+
     .cta-btn {
       background-color: #fff;
       color: #007bff;
@@ -39,15 +34,14 @@
       display: inline-block;
       margin-top: 25px;
     }
-    .cta-btn:hover {
-      background-color: #e6f3ff;
-    }
+
     section {
       max-width: 900px;
       margin: 50px auto;
       padding: 0 20px;
       text-align: center;
     }
+
     .features {
       display: flex;
       flex-wrap: wrap;
@@ -55,47 +49,33 @@
       gap: 20px;
       margin-top: 30px;
     }
+
     .feature {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 260px;
+      width: 200px;
       padding: 25px;
     }
-    .feature h3 {
-      color: #007bff;
-    }
+
+    .feature h3 { color: #007bff; }
+
+    #popular {
+  background: #fff7e6;
+  padding: 40px 20px;
+}
+
+
+    /* PROMO */
     #promo {
       background-color: #fff;
-      padding: 50px 20px;
+      padding: 30px 10px;
       border-top: 3px solid #00bcd4;
       border-bottom: 3px solid #00bcd4;
     }
-    #promo h2 {
-      color: #007bff;
-    }
-    form {
-      margin-top: 20px;
-    }
-    input, select {
-      padding: 12px;
-      width: 70%;
-      margin: 8px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      background-color: #25D366;
-      color: #fff;
-      padding: 12px 30px;
-      border: none;
-      border-radius: 25px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
+
+    #promo h2 { color: #007bff; }
+
     footer {
       background-color: #060606;
       color: #fff;
@@ -105,64 +85,158 @@
     }
 
     .wa-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+    #booking {
+  border-top: 4px solid #007bff;
+  padding-top: 30px;
+}
+.wa-btn {
   background-color: #25D366;
   color: #fff;
-  padding: 10px 15px;
-  border-radius: 50px;
-  font-weight: bold;
+  padding: 15px 35px;
+  border-radius: 30px;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1em;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.wa-float:hover {
+.wa-btn:hover {
+  background-color: #1ebe5d;
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 400px;
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.admin-btn {
+  display: block;
+  margin: 15px 0;
+  padding: 14px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.admin-btn:hover {
+  background: #1ebe5d;
+}
+
+.close-modal {
+  margin-top: 10px;
+  display: inline-block;
+  color: #999;
+  cursor: pointer;
+  font-size: 0.9em;
 }
 
   </style>
 </head>
-<a href="https://wa.me/6285882573640?text=Halo%20Anatop%20Tour,%20saya%20ingin%20melakukan%20reservasi%20paket%20wisata."
-   class="wa-float"
-   target="_blank"
-   aria-label="Booking WhatsApp">
-  💬 Booking via WhatsApp
-</a>
+<div id="waModal" class="modal">
+  <div class="modal-content">
+    <h3>📞 Pilih Admin WhatsApp</h3>
+    <p>Silakan pilih admin terdekat</p>
+
+    <a href="https://wa.me/6285882573640?text=Halo%20Admin%20Bekasi,%20saya%20ingin%20reservasi%20paket%20wisata."
+       target="_blank"
+       class="admin-btn">
+      💬 Admin Bekasi
+    </a>
+
+    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Surabaya,%20saya%20ingin%20reservasi%20paket%20wisata."
+       target="_blank"
+       class="admin-btn">
+      💬 Admin Surabaya
+    </a>
+
+    <span class="close-modal" onclick="closeModal()">Tutup</span>
+  </div>
+</div>
+<script>
+  function openModal() {
+    document.getElementById("waModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("waModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("waModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 <body>
 
+<a href="javascript:void(0)" class="wa-float" onclick="openModal()">
+  💬 Booking WhatsApp
+</a>
+
+
 <header>
-    <h1>ANATOP TOUR</h1>
+  <h1>ANATOP TOUR</h1>
   <h2>🌴 Liburan Seru Tanpa Ribet!</h2>
-  <p>Nikmati paket wisata terbaik dalam dan luar negeri dengan harga mulai <b>Rp 1,9 Juta</b>.</p>
-  <a href="#booking" class="cta-btn">Lihat Promo & Booking Sekarang</a>
+  <p>Paket wisata terbaik dalam & luar negeri mulai <b>Rp 1,9 Juta</b></p>
+  <a href="#booking" class="cta-btn">Lihat Promo & Booking</a>
 </header>
 
-<section>
-  <h2>Kenapa Pilih Kami?</h2>
+<!-- PAKET PALING POPULER -->
+<section id="popular">
+  <h2>⭐ Paket Promo Paling Populer ⭐</h2>
+  <p>Best seller pilihan pelanggan – kuota terbatas!</p>
+
   <div class="features">
-    <div class="feature">
-      <h3>✈️ Harga Terjangkau</h3>
-      <p>Paket lengkap dengan fasilitas premium tanpa bikin kantong bolong.</p>
+    <div class="feature" style="border:2px solid #ff9800;">
+      <h3>🔥4D3N Bangkok Pattaya</h3>
+      <p><b>Rp 2.100.000</b><br>Best Seller <br>Termasuk hotel, transport, dan tiket wisata.</p>
     </div>
-    <div class="feature">
-      <h3>🧭 Tour Guide Berpengalaman</h3>
-      <p>Ditemani oleh guide profesional dan ramah selama perjalanan.</p>
-    </div>
-    <div class="feature">
-      <h3>🏨 Hotel Nyaman</h3>
-      <p>Akomodasi pilihan bintang 3 ke atas di setiap destinasi.</p>
-    </div>
+
   </div>
 </section>
 
+<!-- PROMO UMUM -->
 <section id="promo">
   <h2>🔥 Promo Paket Liburan Populer 🔥</h2>
-  <p>Pilih destinasi favoritmu dan dapatkan harga spesial bulan ini!</p>
 
   <div class="features">
     <div class="feature">
@@ -172,62 +246,51 @@
     <div class="feature">
       <h3>Korea</h3>
       <p>Rp 10.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
     <div class="feature">
       <h3>Jepang</h3>
       <p>Rp 20.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
     <div class="feature">
-      <h3>Trukiye</h3>
+      <h3>Turkiye</h3>
       <p>Rp 16.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
-     <div class="feature">
+    <div class="feature">
       <h3>Malaysia - Singapore</h3>
       <p>Rp 5.399.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
-     <div class="feature">
+    <div class="feature">
       <h3>Malaysia - Singapore - Thailand</h3>
       <p>Rp 5.699.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
-     <div class="feature">
+    <div class="feature">
       <h3>Bangkok Pattaya</h3>
       <p>Rp 1.950.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-      
     </div>
-    
   </div>
 </section>
+
+<!-- KENAPA KAMI -->
+ <section> <h2>Kenapa Pilih Kami?</h2> 
+  <div class="features"> <div class="feature"> <h3>✈️ Harga Terjangkau</h3> <p>Paket lengkap dengan fasilitas premium tanpa bikin kantong bolong.</p> </div> 
+  <div class="feature"> <h3>🧭 Tour Guide Berpengalaman</h3> <p>Ditemani oleh guide profesional dan ramah selama perjalanan.</p> </div> 
+  <div class="feature"> <h3>🏨 Hotel Nyaman</h3> <p>Akomodasi pilihan bintang 3 ke atas di setiap destinasi.</p> </div> 
+</div> </section>
+
+<!-- BOOKING -->
 <section id="booking">
   <h2>Reservasi Sekarang!</h2>
-  <p>Klik tombol di bawah ini dan langsung chat kami via WhatsApp.</p>
+  <a href="javascript:void(0)" class="wa-btn" onclick="openModal()">
+  💬 Reservasi via WhatsApp
+</a>
 
-  <a href="https://wa.me/6285882573640?text=Halo%20Anatop%20Tour,%20saya%20ingin%20melakukan%20reservasi%20paket%20wisata."
-     target="_blank"
-     style="
-       background:#25D366;
-       color:#fff;
-       padding:15px 30px;
-       border-radius:30px;
-       text-decoration:none;
-       font-size:1.1em;
-       font-weight:bold;
-       display:inline-block;
-       margin-top:15px;">
-    💬 Booking via WhatsApp
-  </a>
+
 </section>
 
-
-
 <footer>
-  ©️ 2026 <b>Anatop Tour</b> | 
+  ©️ 2026 <b>Anatop Tour</b> |
   <a href="https://www.instagram.com/anatop.tour" target="_blank" style="color:#fff;">
-    Instagram: @anatop.tour
+    @anatop.tour
   </a>
 </footer>
 
