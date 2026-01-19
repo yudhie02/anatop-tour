@@ -118,99 +118,18 @@
   background-color: #1ebe5d;
   transform: scale(1.05);
 }
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 10000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-  background: #fff;
-  max-width: 400px;
-  margin: 15% auto;
-  padding: 30px;
-  border-radius: 16px;
-  text-align: center;
-}
-
-.modal-content h3 {
-  margin-top: 0;
-  color: #007bff;
-}
-
-.admin-btn {
-  display: block;
-  margin: 15px 0;
-  padding: 14px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.admin-btn:hover {
-  background: #1ebe5d;
-}
-
-.close-modal {
-  margin-top: 10px;
-  display: inline-block;
-  color: #999;
-  cursor: pointer;
-  font-size: 0.9em;
-}
 
   </style>
 </head>
-<div id="waModal" class="modal">
-  <div class="modal-content">
-    <h3>📞 Pilih Admin WhatsApp</h3>
-    <p>Silakan pilih admin terdekat</p>
+  <a href="https://wa.me/6285353177008?text=Halo%20Anatop%20Tour,%20saya%20ingin%20reservasi%20paket%20wisata."
+   class="wa-float"
+   target="_blank">
+  💬 Booking WhatsApp
+</a>
 
-    <a href="https://wa.me/6285882573640?text=Halo%20Admin%20Bekasi,%20saya%20ingin%20reservasi%20paket%20wisata."
-       target="_blank"
-       class="admin-btn">
-      💬 Admin Bekasi
-    </a>
-
-    <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Surabaya,%20saya%20ingin%20reservasi%20paket%20wisata."
-       target="_blank"
-       class="admin-btn">
-      💬 Admin Surabaya
-    </a>
-
-    <span class="close-modal" onclick="closeModal()">Tutup</span>
-  </div>
-</div>
-<script>
-  function openModal() {
-    document.getElementById("waModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("waModal").style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    const modal = document.getElementById("waModal");
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  }
 </script>
 
 <body>
-
-<a href="javascript:void(0)" class="wa-float" onclick="openModal()">
-  💬 Booking WhatsApp
-</a>
 
 
 <header>
@@ -280,17 +199,18 @@
 <!-- BOOKING -->
 <section id="booking">
   <h2>Reservasi Sekarang!</h2>
-  <a href="javascript:void(0)" class="wa-btn" onclick="openModal()">
+ <a href="https://wa.me/6285353177008?text=Halo%20Anatop%20Tour,%20saya%20ingin%20reservasi%20paket%20wisata."
+   target="_blank"
+   class="wa-btn">
   💬 Reservasi via WhatsApp
 </a>
-
 
 </section>
 
 <footer>
   ©️ 2026 <b>Anatop Tour</b> |
   <a href="https://www.instagram.com/anatop.tour" target="_blank" style="color:#fff;">
-    @anatop.tour
+   Instagram @anatop.tour
   </a>
 </footer>
 
