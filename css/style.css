@@ -173,7 +173,7 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  .navbar .menu { display:none; flex-direction:column; background:#fff; position:absolute; right:0; top:60px; width:200px; padding:20px; border-radius:8px; }
+  .navbar .menu { display:none; flex-direction:column; background:#56e5f8; position:absolute; right:0; top:60px; width:200px; padding:20px; border-radius:8px; }
   .hamburger { display:flex; }
   .navbar .menu.show { display:flex; }
 }
