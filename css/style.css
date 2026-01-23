@@ -35,11 +35,68 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
 
 /* CARD */
 .features { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top: 20px; }
-.feature {
+/* .feature {
   flex:1 1 220px; padding:25px; border-radius:15px; color:#fff;
   box-shadow:0 4px 15px rgba(0,0,0,0.1);
   opacity:0; transform:translateY(40px); transition:all 0.7s ease;
+} */
+
+.feature {
+  position: relative;
+  flex:1 1 220px;
+  padding: 35px 25px 25px; 
+  border-radius:15px;
+  color:#fff;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.7s ease;
 }
+
+/* FLAG STACK */
+.flag-stack {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+.feature {
+  position: relative;
+}
+
+/* FLAG GROUP */
+.flag-group {
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  display: flex;
+  gap: 0;
+  z-index: 2;
+}
+
+/* FLAG ITEM */
+.flag-group img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  margin-left: -14px; /* overlap */
+}
+
+/* flag pertama jangan overlap */
+.flag-group img:first-child {
+  margin-left: 0;
+}
+
 .feature.show { opacity:1; transform:translateY(0); }
 .feature h3 { margin-bottom:10px; font-size:1.2em; }
 .feature p { font-size:0.95em; }
@@ -49,6 +106,43 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
   transform:translateY(-5px);
   transition:all 0.3s ease;
 }
+
+.feature:hover .flag-stack {
+  transform: scale(1.08) rotate(-3deg);
+  transition: 0.3s ease;
+}
+
+.feature:hover .flag-group img {
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+
+.feature:hover .flag-group img:nth-child(2) {
+  transform: translateY(-6px);
+}
+
+.feature:hover .flag-group img:nth-child(3) {
+  transform: translateY(-10px);
+}
+
+
+@media(max-width:768px){
+  .flag-stack {
+    width: 36px;
+    height: 36px;
+    top: -10px;
+    left: -10px;
+  }
+}
+
+@media(max-width:768px){
+  .flag-group img {
+    width: 36px;
+    height: 36px;
+    margin-left: -12px;
+  }
+}
+
 
 /* GRADIENTS */
 .gradient-orange { background: linear-gradient(135deg,#ff9800,#ffc107); }
