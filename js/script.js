@@ -102,5 +102,5 @@ function addMarker(lat, lng, title) {
 // ===============================
 // MARKERS
 // ===============================
-addMarker(-6.256162241867565, 106.99124821212646, 'Kantor Jakarta');
+addMarker(-6.256018264998483, 106.99183829811967, 'Kantor Jakarta');
 addMarker(-7.257472, 112.752088, 'Kantor Surabaya');
