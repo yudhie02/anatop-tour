@@ -285,3 +285,36 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
   text-decoration: none;
   font-size: 13px;
 }
+
+.map-toggle button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Floating focus button */
+.map-focus-btn {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: .25s;
+}
+
+.map-focus-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .map-focus-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
