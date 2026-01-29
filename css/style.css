@@ -126,7 +126,7 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
 }
 
 
-@media(max-width:768px){
+/* @media(max-width:768px){
   .flag-stack {
     width: 36px;
     height: 36px;
@@ -141,7 +141,7 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
     height: 36px;
     margin-left: -12px;
   }
-}
+} */
 
 
 /* GRADIENTS */
@@ -173,7 +173,21 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  .navbar .menu { display:none; flex-direction:column; background:#56e5f8; position:absolute; right:0; top:60px; width:200px; padding:20px; border-radius:8px; }
+  .navbar .menu { 
+    display:none; 
+    flex-direction:column; 
+    background:#56e5f8; 
+    position:absolute; 
+    right:0; 
+    top:60px; 
+    width:200px; 
+    padding:20px; 
+    /* border-radius:8px;  */
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
   .hamburger { display:flex; }
   .navbar .menu.show { display:flex; }
 }

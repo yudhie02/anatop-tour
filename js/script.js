@@ -1,4 +1,22 @@
 // ===============================
+// HAMBURGER MENU (MOBILE FIX)
+// ===============================
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+if (hamburger && menu) {
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+}
+
+document.querySelectorAll('.menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('show');
+  });
+});
+
+// ===============================
 // INIT MAP CONFIG
 // ===============================
 const DEFAULT_CENTER = [-6.2, 106.816666];
