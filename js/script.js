@@ -104,3 +104,18 @@ function addMarker(lat, lng, title) {
 // ===============================
 addMarker(-6.256018264998483, 106.99183829811967, 'Kantor Jakarta');
 addMarker(-7.257472, 112.752088, 'Kantor Surabaya');
+
+// ===============================
+// CARD SCROLL ANIMATION (FIX)
+// ===============================
+const features = document.querySelectorAll('.feature');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+features.forEach(feature => observer.observe(feature));
