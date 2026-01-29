@@ -230,3 +230,58 @@ section h2 { font-size:2em; margin-bottom:20px; color:#007bff; }
     flex: unset;
   }
 }
+
+#map {
+  width: 100%;
+  height: 450px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,.18);
+}
+
+/* Toggle icon control */
+.map-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 8px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  z-index: 1000;
+}
+
+.map-toggle button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+  opacity: .4;
+  transition: .25s;
+}
+
+.map-toggle button.active {
+  background: #00bcd4;
+  color: #fff;
+  opacity: 1;
+}
+
+/* Popup style */
+.leaflet-popup-content-wrapper {
+  border-radius: 14px;
+}
+
+.map-popup a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #00bcd4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+}
