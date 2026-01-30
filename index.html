@@ -3,228 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anatop Tour | Paket Liburan Murah 2026</title>
-
-  <style>
-    body {
-      font-family: "Poppins", Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f7fb;
-      color: #333;
-    }
-
- header {
-  background:
-    linear-gradient(
-      rgba(0, 123, 255, 0.75),
-      rgba(0, 188, 212, 0.75)
-    ),
-    url("images/asia-tour-header.jpg") center/cover no-repeat;
-  color: #fff;
-  text-align: center;
-  padding: 110px 20px;
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 80px 15px;
-    background-position: center top;
-  }
-}
-
-    header h1 { font-size: 2.4em; margin: 0; }
-    header h2 { font-size: 1.5em; margin: 0; }
-    header p { margin-top: 10px; font-size: 1.1em; }
-
-    .cta-btn {
-      background-color: #fff;
-      color: #007bff;
-      padding: 15px 35px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 25px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .feature {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 200px;
-      padding: 25px;
-    }
-
-    .feature h3 { color: #007bff; }
-
-    #popular {
-  background: #fff7e6;
-  padding: 40px 20px;
-}
-
-
-    /* PROMO */
-    #promo {
-      background-color: #fff;
-      padding: 30px 10px;
-      border-top: 3px solid #00bcd4;
-      border-bottom: 3px solid #00bcd4;
-    }
-
-    #promo h2 { color: #007bff; }
-
-    footer {
-      background-color: #060606;
-      color: #fff;
-      text-align: center;
-      padding: 25px 10px;
-      font-size: 0.9em;
-    }
-
-    .wa-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 9999;
-    }
-    #booking {
-  border-top: 4px solid #007bff;
-  padding-top: 30px;
-}
-.wa-btn {
-  background-color: #25D366;
-  color: #fff;
-  padding: 15px 35px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 15px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.wa-btn:hover {
-  background-color: #1ebe5d;
-  transform: scale(1.05);
-}
-
-  </style>
+  <title>Anatop Tour | Company Profile</title>
+  <link rel="stylesheet" href="css/style.css?v=7"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
-  <a href="https://wa.me/6285353177008?text=Halo%20Anatop%20Tour,%20saya%20ingin%20reservasi%20paket%20wisata."
-   class="wa-float"
-   target="_blank">
-  💬 Booking WhatsApp
-</a>
-
-</script>
-
 <body>
 
+<!-- NAVBAR TRANSPARAN -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">ANATOP TOUR</div>
+    <ul class="menu">
+      <li><a href="#hero">Beranda</a></li>
+      <li><a href="#about">Tentang Kami</a></li>
+      <li><a href="#packages">Paket Wisata</a></li>
+      <li><a href="#locations">Lokasi</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
 
-<header>
-  <h1>ANATOP TOUR</h1>
-  <h2>🌴 Liburan Seru Tanpa Ribet!</h2>
-  <p>Paket wisata terbaik dalam & luar negeri mulai <b>Rp 1,9 Juta</b></p>
-  <a href="#booking" class="cta-btn">Lihat Promo & Booking</a>
+<!-- HERO -->
+<header id="hero" class="hero">
+  <div class="hero-content">
+    <h1>ANATOP TOUR</h1>
+    <h2>🌴 Liburan Seru Tanpa Ribet!</h2>
+    <p>Paket wisata terbaik dalam & luar negeri mulai <b>Rp 1,9 Juta</b></p>
+    <a href="#packages" class="cta-btn">Lihat Paket</a>
+  </div>
 </header>
+
+<!-- TENTANG KAMI -->
+<section id="about">
+  <h2>Tentang Kami</h2>
+  <p>Anatop Tour menyediakan paket liburan lengkap dengan harga terjangkau, tour guide profesional, dan akomodasi premium.</p>
+</section>
+
+<!-- PAKET WISATA -->
+<section id="packages">
+  <h2>Paket Paling Populer</h2>
+  <div class="features">
+    <div class="feature gradient-orange">
+      <img src="images/flags/thailand-circle.svg" class="flag-stack" alt="Thailand"> 🔥Bangkok Pattaya + Colosseum Show</h3>
+      <!-- <h3>🔥4D3N Bangkok Pattaya + Colosseum Show</h3> -->
+      <p><b>Rp 2.100.000</b> <br>Termasuk hotel, transport, dan tiket wisata.</p>
+    </div>
+</section>
 
 <!-- PAKET PALING POPULER -->
 <section id="popular">
-  <h2>⭐ Paket Paling Populer ⭐</h2>
+  <h2>⭐ Paket Liburan Populer ⭐</h2>
   <p>Best seller pilihan pelanggan – kuota terbatas!</p>
 
   <div class="features">
-    <div class="feature" style="border:2px solid #ff9800;">
-      <h3>🔥4D3N Bangkok Pattaya + Colosseum Show</h3>
-      <p><b>Rp 2.100.000</b> <br>Termasuk hotel, transport, dan tiket wisata.</p>
+    <div class="feature gradient-blue">
+      <!-- <h3>🇻🇳 Vietnam</h3> -->
+      <h3>
+       <img src="images/flags/vietnam-circle.svg" class="flag-stack" alt="Vietnam"> Vietnam</h3>
+      <p><b>Rp 9.490.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
     </div>
+    <div class="feature gradient-purple">
+      <!-- <h3>🇰🇷 Korea</h3> -->
+      <h3>
+       <img src="images/flags/korea-circle.svg" class="flag-stack" alt="Korea"> Korea</h3>
+      <p><b>Rp 10.490.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
+    </div>
+    <div class="feature gradient-pink">
+      <!-- <h3>🇯🇵 Jepang</h3> -->
+      <h3>
+       <img src="images/flags/japan-circle.svg" class="flag-stack" alt="Jepang"> Jepang</h3>
+      <p><b>Rp 20.490.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
+    </div>
+    <div class="feature gradient-green">
+      <!-- <h3>🇹🇷 Turkiye</h3> -->
+      <h3>
+       <img src="images/flags/turkey-circle.svg" class="flag-stack" alt="Turkiye"> Turkiye</h3>
+      <p><b>Rp 16.490.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
+    </div>
+    <div class="feature gradient-yellow">
+      <!-- <h3>🇲🇾 Malaysia - Singapore</h3> -->
+      <div class="flag-group">
+        <img src="images/flags/malaysia-circle.svg" alt="Malaysia">
+        <img src="images/flags/singapore-circle.svg" alt="Singapore">
+      </div>
 
-  </div>
-</section>
-
-<!-- PROMO UMUM -->
-<section id="promo">
-  <h2>🔥 Paket Liburan Populer 🔥</h2>
-
-  <div class="features">
-    <div class="feature">
-      <h3>Vietnam</h3>
-      <p>Rp 9.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      <h3>Malaysia – Singapore</h3>
+      <p><b>Rp 5.399.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
     </div>
-    <div class="feature">
-      <h3>Korea</h3>
-      <p>Rp 10.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-    </div>
-    <div class="feature">
-      <h3>Jepang</h3>
-      <p>Rp 20.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-    </div>
-    <div class="feature">
-      <h3>Turkiye</h3>
-      <p>Rp 16.490.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-    </div>
-    <div class="feature">
-      <h3>Malaysia - Singapore</h3>
-      <p>Rp 5.399.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
-    </div>
-    <div class="feature">
+    <div class="feature gradient-teal">
+      <div class="flag-group">
+        <img src="images/flags/malaysia-circle.svg" alt="Malaysia">
+        <img src="images/flags/singapore-circle.svg" alt="Singapore">
+        <img src="images/flags/thailand-circle.svg" alt="Thailand">
+      </div>
       <h3>Malaysia - Singapore - Thailand</h3>
-      <p>Rp 5.699.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+      <p><b>Rp 5.699.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
     </div>
-    <div class="feature">
-      <h3>Bangkok Pattaya</h3>
-      <p>Rp 1.950.000 / pax<br>Termasuk hotel, transport, dan tiket wisata.</p>
+    <div class="feature gradient-red">
+      <!-- <h3>🇹🇭 Bangkok Pattaya</h3> -->
+      <h3>
+       <img src="images/flags/thailand-circle.svg" class="flag-stack" alt="Thailand"> Bangkok Pattaya</h3>
+      <p><b>Rp 1.950.000 / pax</b><br>Termasuk hotel, transport, dan tiket wisata.</p>
     </div>
   </div>
 </section>
 
 <!-- KENAPA KAMI -->
- <section> <h2>Kenapa Pilih Kami?</h2> 
-  <div class="features"> <div class="feature"> <h3>✈️ Harga Terjangkau</h3> <p>Paket lengkap dengan fasilitas premium tanpa bikin kantong bolong.</p> </div> 
-  <div class="feature"> <h3>🧭 Tour Guide Berpengalaman</h3> <p>Ditemani oleh guide profesional dan ramah selama perjalanan.</p> </div> 
-  <div class="feature"> <h3>🏨 Hotel Nyaman</h3> <p>Akomodasi pilihan bintang 3 ke atas di setiap destinasi.</p> </div> 
-</div> </section>
-
-<!-- BOOKING -->
-<section id="booking">
-  <h2>Reservasi Sekarang!</h2>
- <a href="https://wa.me/6285353177008?text=Halo%20Anatop%20Tour,%20saya%20ingin%20reservasi%20paket%20wisata."
-   target="_blank"
-   class="wa-btn">
-  💬 Reservasi via WhatsApp
-</a>
-
+<section id="why-us">
+  <h2>Kenapa Pilih Kami?</h2> 
+  <div class="features">
+    <div class="feature gradient-blue">
+      <h3>✈️ Harga Terjangkau</h3>
+      <p>Paket lengkap dengan fasilitas premium tanpa bikin kantong bolong.</p>
+    </div> 
+    <div class="feature gradient-purple">
+      <h3>🧭 Tour Guide Berpengalaman</h3>
+      <p>Ditemani oleh guide profesional dan ramah selama perjalanan.</p>
+    </div> 
+    <div class="feature gradient-pink">
+      <h3>🏨 Hotel Nyaman</h3>
+      <p>Akomodasi pilihan bintang 3 ke atas di setiap destinasi.</p>
+    </div> 
+    <div class="feature gradient-orange">
+      <h3>🚗 Transportasi Mudah</h3>
+      <p>Semua transportasi sudah termasuk, nyaman, dan tepat waktu.</p>
+    </div>
+    <div class="feature gradient-teal">
+      <h3>🎟️ Tiket Wisata Lengkap</h3>
+      <p>Semua tiket destinasi wisata sudah termasuk dalam paket.</p>
+    </div>
+    <div class="feature gradient-green">
+      <h3>💬 Support 24/7</h3>
+      <p>Tim customer service siap membantu kapan saja.</p>
+    </div>
+  </div>
 </section>
 
-<footer>
-  ©️ 2026 <b>Anatop Tour</b> |
-  <a href="https://www.instagram.com/anatop.tour" target="_blank" style="color:#fff;">
-   Instagram @anatop.tour
-  </a>
+
+<!-- LOKASI -->
+<section id="locations">
+  <h2>Lokasi Kantor</h2>
+  <div id="map"></div>
+</section>
+
+<!-- KONTAK -->
+<section id="contact">
+  <h2>Reservasi Sekarang!</h2>
+  <a href="https://wa.me/6285353177008" class="wa-btn" target="_blank">💬 WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Anatop Tour</h3>
+      <p>Paket wisata terbaik untuk liburan domestik & internasional. Nikmati pengalaman perjalanan tanpa ribet!</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontak Kami</h4>
+      <p>📍 Head Office Jl. Ketintang Baru IV No. 50, Surabaya</p>
+      <p>📍 Branch Office Jl. A. Yani No. 75, Bekasi</p>
+      <p>📧 adminbekasi@anatoptour.com</p>
+      <p>📞 +62 853 5317 7008</p>
+    </div>
+
+    <div class="footer-social">
+      <h4>Ikuti Kami</h4>
+      <a href="https://www.facebook.com/anatop.tour" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/anatop.tour" target="_blank">Instagram</a> |
+      <a href="https://wa.me/6285353177008" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 <b>Anatop Tour</b>. All rights reserved.
+  </div>
 </footer>
 
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/6285353177008" class="wa-float" target="_blank">
+  💬 Reservasi
+</a>
+
+<!-- JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/script.js?v=7"></script>
 </body>
 </html>
